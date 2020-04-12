@@ -1,0 +1,103 @@
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+a {
+ 
+}
+
+p {
+
+}
+
+ul {
+ 
+}
+
+li {
+
+}
+
+::selection {
+
+}
+
+
+
+
+
+
+/* Below this line is used for font testing purposes */
+
+/*
+
+     font-family: 'Poiret One', ;
+     font-family: 'Cookie', ;
+     font-family: 'Handlee', ;
+     font-family: 'Josefin Slab', ;
+     font-family: 'Economica', ;
+     font-family: 'Arima Madurai', ;
+     font-family: 'Mali', ;
+     font-family: 'Sofia', ;
+     font-family: 'Montez', ;
+     font-family: 'Spirax', ;
+     font-family: 'Henny Penny', ;
+
+ */
+
+.poiret-one {
+  font-family: 'Poiret One', sans-serif;
+}
+
+.cookie {
+  font-family: 'Cookie', sans-serif;
+}
+
+.handlee {
+  font-family: 'Handlee', sans-serif;
+}
+
+.josefin-slab {
+  font-family: 'Josefin Slab', sans-serif;
+}
+
+.economica {
+  font-family: 'Economica', sans-serif;
+}
+
+.arima-madurai {
+  font-family: 'Arima Madurai', sans-serif;
+}
+
+.mali {
+  font-family: 'Mali', sans-serif;
+}
+
+.sophia {
+  font-family: 'Sofia', sans-serif;
+}
+
+.montez {
+  font-family: 'Montez', sans-serif;
+}
+
+.spirex {
+  font-family: 'Spirax', sans-serif;
+}
+
+.henny-penny {
+  font-family: 'Henny Penny', sans-serif;
+}

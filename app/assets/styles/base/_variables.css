@@ -1,0 +1,33 @@
+
+
+$color-primary-light: #e4dcc5;
+$color-primary: #d6c9a4;
+$color-primary-dark: #b0a587;
+
+$color-dark: #23211b;
+$color-light: #ededed;
+
+$font-color-dark: #3b372d;
+$font-color-light: #f3f0e6;
+
+$shadow-text-dark: 1px 1px 2px $color-dark;
+$shadow-text-light: 1px 1px 2px $color-light;
+
+$shadow-dark-lg: 0 0 3rem 0 $color-dark;
+$shadow-dark-sm: 0 0 1rem 0 $color-dark;
+$shadow-light-lg: 0 0 3rem 0 $color-light;
+$shadow-light-sm: 0 0 1rem 0 $color-light;
+
+$font-heading-default: 2.8rem/1.1 'Poiret One', sans-serif;
+$font-sub-heading-default: 3rem/1.8 'Poiret One', sans-serif;
+
+$font-panel-heading-default: 2.8rem/1.1 'Poiret One', sans-serif;
+$font-panel-sub-heading-default: 2.2rem/1.1 'handlee', sans-serif;
+
+$font-text-default: 1.8rem/1.4 'handlee', sans-serif;
+$font-text-decorative: 2rem/1.4 'Sofia', sans-serif;
+$font-text-decorative-sm: 1.6rem/1.4 'Sofia', sans-serif;
+
+$indent: 2rem;
+
+$transition-default: all .2s ease-in;

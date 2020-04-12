@@ -1,0 +1,32 @@
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 120rem;
+
+  @mixin atMedium {
+    margin: 3rem auto;
+  }
+}
