@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  &__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+
+    &--1 { background-color: red;
+  
+    }
+
+    &--2 { background-color: green;
+
+    }
+
+    &--3 { background-color: blue;
+
+    }
+  }
+
+  &__social { background-color: white;
+    display: flex;
+  }
+
+  &__social-link {
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__social-icon {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  &__nav { background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__nav-link {
+    
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__copy {
+
+  }
+}
