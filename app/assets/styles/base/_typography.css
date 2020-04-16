@@ -1,28 +1,41 @@
 
 h1 {
-  color: $color-grey-light-3;
+  font-family: $font-heading;
+  font-weight: $font-heading-weight;
+  letter-spacing: $font-heading-space;
 }
 
 h2 {
-
+  font-family: $font-heading;
+  font-weight: $font-heading-weight;
+  letter-spacing: $font-heading-space;
 }
 
 h3 {
-
+  font-family: $font-heading;
+  font-weight: $font-heading-weight;
+  letter-spacing: $font-heading-space;
 }
 
 h4 {
-
+  font-family: $font-heading;
+  font-weight: $font-heading-weight;
+  letter-spacing: $font-heading-space;
 }
 
 a {
   text-decoration: none;
   line-height: 1;
   color: $color-grey-light-3;
+  font-family: $font-link;
+  font-weight: $font-link-weight;
+  letter-spacing: $font-link-space;
 }
 
 p {
-
+  font-family: $font-text;
+  font-weight: $font-text-weight;
+  letter-spacing: $font-text-space;
 }
 
 ul {
@@ -34,72 +47,6 @@ li {
 }
 
 ::selection {
-
+  color: $color-grey-light-2;
 }
 
-
-
-
-
-
-/* Below this line is used for font testing purposes */
-
-/*
-
-     font-family: 'Poiret One', ;
-     font-family: 'Cookie', ;
-     font-family: 'Handlee', ;
-     font-family: 'Josefin Slab', ;
-     font-family: 'Economica', ;
-     font-family: 'Arima Madurai', ;
-     font-family: 'Mali', ;
-     font-family: 'Sofia', ;
-     font-family: 'Montez', ;
-     font-family: 'Spirax', ;
-     font-family: 'Henny Penny', ;
-
- */
-
-.poiret-one {
-  font-family: 'Poiret One', sans-serif;
-}
-
-.cookie {
-  font-family: 'Cookie', sans-serif;
-}
-
-.handlee {
-  font-family: 'Handlee', sans-serif;
-}
-
-.josefin-slab {
-  font-family: 'Josefin Slab', sans-serif;
-}
-
-.economica {
-  font-family: 'Economica', sans-serif;
-}
-
-.arima-madurai {
-  font-family: 'Arima Madurai', sans-serif;
-}
-
-.mali {
-  font-family: 'Mali', sans-serif;
-}
-
-.sophia {
-  font-family: 'Sofia', sans-serif;
-}
-
-.montez {
-  font-family: 'Montez', sans-serif;
-}
-
-.spirex {
-  font-family: 'Spirax', sans-serif;
-}
-
-.henny-penny {
-  font-family: 'Henny Penny', sans-serif;
-}

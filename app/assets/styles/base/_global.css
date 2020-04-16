@@ -20,11 +20,10 @@ body {
   background-attachment: fixed;
 }
 
-.body { height: 10rem;
+.body {
   display: flex;
   flex-direction: column;
-  background-color: $color-grey-dark-3;
-
+  background-color: rgba($color-grey-dark-3, .25);
 }
 
 img {
@@ -37,4 +36,10 @@ img {
   @mixin atMedium {
     margin: 3rem auto;
   }
+}
+
+.row {border-bottom: 1px solid black;
+  display: flex;
+  width: 100%;
+  min-height: 5rem;
 }
