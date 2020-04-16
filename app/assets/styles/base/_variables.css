@@ -1,22 +1,16 @@
 
 
-$color-primary-light: #e4dcc5;
-$color-primary: #d6c9a4;
-$color-primary-dark: #b0a587;
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #888;
 
-$color-dark: #23211b;
-$color-light: #ededed;
+$color-grey-dark-1: #3a3a3a;
+$color-grey-dark-2: #1a1a1a;
+$color-grey-dark-3: #111;
 
-$font-color-dark: #3b372d;
-$font-color-light: #f3f0e6;
+$color-white: #fefefe;
+$color-black: #0e0c0c;
 
-$shadow-text-dark: 1px 1px 2px $color-dark;
-$shadow-text-light: 1px 1px 2px $color-light;
-
-$shadow-dark-lg: 0 0 3rem 0 $color-dark;
-$shadow-dark-sm: 0 0 1rem 0 $color-dark;
-$shadow-light-lg: 0 0 3rem 0 $color-light;
-$shadow-light-sm: 0 0 1rem 0 $color-light;
 
 $font-heading-default: 2.8rem/1.1 'Poiret One', sans-serif;
 $font-sub-heading-default: 3rem/1.8 'Poiret One', sans-serif;

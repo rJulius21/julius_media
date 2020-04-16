@@ -1,6 +1,8 @@
 .footer {
   display: flex;
   flex-direction: column;
+  color: $color-grey-light-3;
+  background-image: linear-gradient(to top, $color-grey-dark-3, $color-grey-dark-1);
 
   &__section {
     display: flex;
@@ -8,24 +10,27 @@
     justify-content: center;
     padding: 2px;
 
-    &--1 { background-color: red;
+    &--1 { 
   
     }
 
-    &--2 { background-color: green;
+    &--2 { 
 
     }
 
-    &--3 { background-color: blue;
+    &--3 { 
 
     }
   }
 
-  &__social { background-color: white;
+  &__social {
     display: flex;
   }
 
   &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:not(:last-child) {
       margin-right: 1rem;
@@ -35,14 +40,15 @@
   &__social-icon {
     height: 3rem;
     width: 3rem;
+    fill: $color-grey-light-3;
   }
 
-  &__nav { background-color: #fff;
+  &__nav {
     display: flex;
-    flex-wrap: wrap;
   }
 
   &__nav-link {
+    color: $color-grey-light-3;
     
     &:not(:last-child) {
       margin-right: 1rem;

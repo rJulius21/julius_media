@@ -10,17 +10,25 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
+  background-image: radial-gradient($color-grey-light-2, $color-grey-dark-1);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+.body { height: 10rem;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-grey-dark-3;
+
+}
+
 img {
-  max-width: 100%;
-  height: auto;
+
 }
 
 .wrapper {

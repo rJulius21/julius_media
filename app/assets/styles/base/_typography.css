@@ -1,6 +1,6 @@
 
 h1 {
-
+  color: $color-grey-light-3;
 }
 
 h2 {
@@ -16,7 +16,9 @@ h4 {
 }
 
 a {
- text-decoration: none;
+  text-decoration: none;
+  line-height: 1;
+  color: $color-grey-light-3;
 }
 
 p {
