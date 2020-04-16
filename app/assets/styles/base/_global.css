@@ -31,11 +31,8 @@ img {
 }
 
 .wrapper {
-  max-width: 120rem;
+  max-width: 100%;
 
-  @mixin atMedium {
-    margin: 3rem auto;
-  }
 }
 
 .row {border-bottom: 1px solid black;
