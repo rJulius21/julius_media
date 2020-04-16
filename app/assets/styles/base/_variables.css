@@ -11,6 +11,8 @@ $color-grey-dark-3: #111;
 $color-white: #fefefe;
 $color-black: #0e0c0c;
 
+$bor-rad-lg: 3px;
+$bor-rad-sm: 1px;
 
 $font-heading:'alegreya', sans-serif;
 $font-heading-weight: 300;
@@ -19,6 +21,7 @@ $font-heading-space: 1px;
 $font-text:'lato', sans-serif;
 $font-text-weight: 300;
 $font-text-space: 1px;
+$font-text-size: 1.6rem;
 
 $font-link:'paganini-light', sans-serif;
 $font-link-weight: 300;
@@ -27,4 +30,4 @@ $font-link-space: 0px;
 
 $indent: 2rem;
 
-$transition-default: all .2s ease-in;
+$transition: all .2s ease-in;

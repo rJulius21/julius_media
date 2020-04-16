@@ -8,14 +8,14 @@ h1 {
 h2 {
   font-family: $font-heading;
   font-weight: $font-heading-weight;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   letter-spacing: $font-heading-space;
 }
 
 h3 {
   font-family: $font-heading;
   font-weight: $font-heading-weight;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   letter-spacing: $font-heading-space;
 }
 
@@ -37,8 +37,10 @@ a {
 p {
   font-family: $font-text;
   font-weight: $font-text-weight;
-  font-size: 1.4rem;
+  font-size: $font-text-size;
   letter-spacing: $font-text-space;
+  line-height: 1.2;
+  text-indent: $indent;
 }
 
 ul {

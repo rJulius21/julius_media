@@ -1,7 +1,19 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
+  font-size: 50%;
+
+  @mixin atSmall {
+    font-size: 56.25%;
+  }
+
+  @mixin atMedium {
+    font-size: 62.5%;
+  }
+
+  @mixin atLarge {
+    font-size: 75%;
+  }
 }
 
 *,
@@ -10,7 +22,6 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 body {
@@ -26,9 +37,12 @@ body {
   background-color: rgba($color-grey-dark-3, .25);
 }
 
+/*
 img {
-
+  display: block;
+  width: 100%;
 }
+*/
 
 .wrapper {
   max-width: 100%;

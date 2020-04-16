@@ -7,30 +7,44 @@
 .cta {
   flex-direction: column;
 
-  &__one {
+  &__one { background-color: red;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 4rem;
   }
 
   &__one-heading {
-
+    margin-bottom: 1rem;
   }
 
   &__one-text {
 
   }
 
-  &__two {
+  &__two { background-color: green;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
   }
 
   &__two-text {
-    
+    margin-bottom: 1rem;
   }
 
   &__two-btn {
-    
+    background-color: blue;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: $font-text-size;
+
+    transition: $transition;
+
+    &:hover {
+      letter-spacing: 2px;
+    }
   }
 }
 
@@ -40,38 +54,46 @@
 
 .services {
   flex-direction: column;
+  padding: 1rem;
 
   &__heading {
-
+    padding: 1rem;
   }
 
-  &__panels {
+  &__panels { 
     flex-direction: column;
     display: flex;
   }
-
-  &__panel {
+  
+  &__panel { background-color: orange;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: $bor-rad-lg;
   }
 
   &__panel-heading {
-    
+    margin-bottom: 1rem;
   }
 
   &__panel-text {
-    
+
   }
 }
 
 .pitch {
   flex-direction: column;
+  padding: 1rem;
 
-  &__panel {
+  &__panel { background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: $bor-rad-lg;
   }
 
   &__img-box {
@@ -82,43 +104,56 @@
 
   }
 
-  &__panel-heading {
-    
+  &__heading { background-color: #fff;
+    padding: 1rem;
+    border-radius: $bor-rad-sm;
   }
 
-  &__panel-text {
-    
+  &__text {
+    margin-bottom: 1rem;
   }
 }
 
 .features {
   flex-direction: column;
+  padding: 1rem;
 
   &__img-box {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    height: 15rem;
   }
 
   &__img {
-
+    height: 100%;
+    object-fit: cover;
   }
 
   &__heading {
-
   }
-
+  
   &__panels {
     display: flex;
     flex-direction: column;
   }
 
-  &__panel {
+  &__panel { background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
+    padding: 4rem 2rem;
+    border-radius: $bor-rad-lg;
   }
-
+  
   &__panel-heading {
-    
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: $bor-rad-sm;
+    background-color: rgb(124, 196, 238);
+    text-align: center;
   }
 
   &__panel-text {
