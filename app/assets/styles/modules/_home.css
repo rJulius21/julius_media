@@ -4,10 +4,10 @@
   align-items: center;
 }
 
-.cta {
+.cta { background-color: red;
   flex-direction: column;
 
-  &__one { background-color: red;
+  &__one {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +76,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem; 
     padding: 2rem;
     border-radius: $bor-rad-lg;
     background-image: radial-gradient($color-grey-light-3, $color-grey-dark-2);
