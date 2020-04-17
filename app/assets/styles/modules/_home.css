@@ -55,8 +55,42 @@
   }
 }
 
-.home-gallery {
+.home-comp {
   flex-direction: column;
+
+  &__row {
+
+  }
+
+  &__img-box {
+
+    &--1 {
+
+    }
+
+    &--2 {
+      
+    }
+
+    &--3 {
+      
+    }
+  }
+
+  &__img {
+
+    &--1 {
+
+    }
+
+    &--2 {
+
+    }
+
+    &--3 {
+      
+    }
+  }
 }
 
 .services {
