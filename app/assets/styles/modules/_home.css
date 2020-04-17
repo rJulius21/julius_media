@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
     background-image: radial-gradient($color-grey-light-3, $color-grey-dark-2);
   }
 
@@ -39,9 +39,10 @@
   }
 
   &__two-btn {
-    background-color: $color-grey-light-3;
+    background-color: $color-grey-dark-1;
     margin-top: 1rem;
     padding: 1rem;
+    box-shadow: 0 0 2rem 0 $color-grey-light-1;
     color: $color-grey-light-2;
     font-size: $font-text-size;
     font-weight: $font-text-weight;
@@ -60,8 +61,8 @@
 
 .services {
   flex-direction: column;
-  padding: 1rem;
-  color: $color-grey-light-2;
+  padding: 2rem;
+  color: $color-grey-light-1;
 
   &__heading {
     padding: 1rem;
@@ -77,13 +78,21 @@
     flex-direction: column;
     align-items: center;
     margin: 1rem; 
-    padding: 2rem;
+    padding: 3rem;
     border-radius: $bor-rad-lg;
     background-image: radial-gradient($color-grey-light-3, $color-grey-dark-2);
   }
 
-  &__panel-heading {
+  &__panel-link {
     margin-bottom: 1rem;
+  }
+
+  &__panel-heading {
+    color: $color-grey-light-2;
+
+    &:hover {
+      color: $color-grey-light-3;
+    }
   }
 
   &__panel-text {
@@ -93,14 +102,14 @@
 
 .pitch {
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem;
 
   &__panel {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    padding: 2rem;
+    padding: 3rem;
     background-image: radial-gradient(rgba(254,254,254,0.25), #80dfff);
     border-radius: $bor-rad-lg;
   }
@@ -134,7 +143,7 @@
 
 .features {
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem;
 
   &__img-box {
     display: flex;
@@ -162,7 +171,7 @@
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    padding: 4rem 2rem;
+    padding: 3rem;
     background-image: radial-gradient(rgba(0,255,255,0.5), #60c);
     border-radius: $bor-rad-lg;
   }
