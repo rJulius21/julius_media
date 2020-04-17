@@ -1,11 +1,11 @@
 
 
 $color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+$color-grey-light-2: #c7c7c7;
 $color-grey-light-3: #888;
 
-$color-grey-dark-1: #3a3a3a;
-$color-grey-dark-2: #1a1a1a;
+$color-grey-dark-1: #414141;
+$color-grey-dark-2: #2f2f2f;
 $color-grey-dark-3: #111;
 
 $color-white: #fefefe;
@@ -21,7 +21,7 @@ $font-heading-space: 1px;
 $font-text:'lato', sans-serif;
 $font-text-weight: 300;
 $font-text-space: 1px;
-$font-text-size: 1.6rem;
+$font-text-size: 1.8rem;
 
 $font-link:'paganini-light', sans-serif;
 $font-link-weight: 300;
