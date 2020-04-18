@@ -1,0 +1,17 @@
+.portfolio {
+
+  &__page {
+padding: 3rem;
+  }
+
+  &__box {
+    background-color: rgba($color-grey-dark-1, .5);
+    padding: 3rem;
+    border-radius: $bor-rad-lg;
+  }
+
+  &__message {
+    color: $color-grey-light-1;
+    font-size: 3rem;
+  }
+}
