@@ -45,7 +45,8 @@
 
   &__heading {
     width: max-content;
-    font-size: 3rem;
+    margin: 1rem;
+    font-size: 3.4rem;
     color: $color-grey-light-2;
   }
 }
