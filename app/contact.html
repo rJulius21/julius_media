@@ -55,7 +55,47 @@
      </nav>
    </header>
 
-   <div class="body">
+   <div class="body contact-body">
+     <div class="contact">
+       <form action="contact.php" method="POST" class="contact__form">
+         <h2 class="contact__heading">Contact Julius Media</h2>
+         <div class="contact__left">
+          <input type="text" placeholder="Your Name" class="contact__input">
+          <input type="email" placeholder="Your Email" class="contact__input">
+          <input type="text" placeholder="Name of Business" class="contact__input">
+          <input type="text" placeholder="Website Address" class="contact__input">
+         </div>
+         <div class="contact__right">
+          <p class="contact__question">Which social media platforms are you currently using?</p>
+          <div class="contact__checkbox-area">
+            
+            <div class="contact__checkbox-group">
+              <input type="checkbox" class="contact__checkbox"><label for="" class="contact__checkbox-label">Facebook</label>
+            </div>
+            <div class="contact__checkbox-group">
+              <input type="checkbox" class="contact__checkbox"><label for="" class="contact__checkbox-label">Instagram</label>
+            </div>
+            <div class="contact__checkbox-group">
+              <input type="checkbox" class="contact__checkbox"><label for="" class="contact__checkbox-label">Twitter</label>
+            </div>
+            <div class="contact__checkbox-group">
+              <input type="checkbox" class="contact__checkbox"><label for="" class="contact__checkbox-label">YouTube</label>
+            </div>
+            <div class="contact__checkbox-group">
+              <input type="checkbox" class="contact__checkbox"><label for="" class="contact__checkbox-label">Twitch</label>
+            </div>
+            <div class="contact__checkbox-group">
+              <input type="checkbox" class="contact__checkbox"><label for="" class="contact__checkbox-label">Other</label>
+            </div>
+            <div class="contact__checkbox-group">
+              <input type="checkbox" class="contact__checkbox"><label for="" class="contact__checkbox-label">None</label>
+            </div>
+          </div>
+          <textarea name="message" id="contactMessage" cols="30" rows="10" class="contact__message"></textarea>
+         </div>
+         <input type="submit" class="contact__submit" value="Submit">
+       </form>
+     </div>
      <div class="faq">
        <h2 class="faq__heading">FAQ</h2>
        <!--

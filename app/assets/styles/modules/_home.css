@@ -1,3 +1,7 @@
+.home-body {
+  flex-direction: column;
+}
+
 .home-splash {
   flex-direction: column;
   justify-content: center;

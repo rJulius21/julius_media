@@ -33,7 +33,6 @@ body {
 
 .body {
   display: flex;
-  flex-direction: column;
   background-color: rgba($color-grey-dark-3, .25);
 }
 

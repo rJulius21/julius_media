@@ -1,3 +1,85 @@
+.contact-body {
+  flex-direction: column;
+}
+
+.contact {
+  padding: 3rem;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    border-radius: $bor-rad-lg;
+    background-color: $color-grey-dark-3;
+    color: $color-grey-light-1;
+  }
+
+  &__heading {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    margin-bottom: 2rem;
+    padding: .5rem;
+    border-radius: $bor-rad-sm;
+    border: none;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__question {
+    margin-bottom: 2rem;
+  }
+
+  &__checkbox-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+  }
+
+  &__checkbox-group {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__checkbox {
+    margin-right: 1rem;
+  }
+
+  &__checkbox-label {
+    font-family: $font-text;
+    font-size: $font-text-size;
+  }
+
+  &__message {
+    padding: 2rem;
+    border-radius: $bor-rad-lg;
+    border: none;
+  }
+
+  &__submit {
+    align-self: center;
+    padding: .5rem 1rem;
+    border-radius: $bor-rad-sm;
+    border: none;
+    font-family: $font-text;
+  }
+}
+
 .faq {
 
   &__heading {
