@@ -44,7 +44,8 @@ p {
 }
 
 ul {
- 
+  font-family: $font-text;
+  font-size: $font-text-size;
 }
 
 li {

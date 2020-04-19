@@ -63,6 +63,12 @@
   flex-direction: column;
   padding: 3rem 6rem;
 
+  &__heading {
+    margin-bottom: 2rem;
+    color: $color-grey-light-1;
+    text-align: center;
+  }
+
   &__row {
     display: flex;
     flex-direction: column;
@@ -73,7 +79,7 @@
   &__img-box {
     position: relative;
     overflow: hidden;
-    height: 24rem;
+    height: 28rem;
     width: 100%;
     border-radius: $bor-rad-lg;
     border: 3px solid $color-grey-light-2;
