@@ -1,10 +1,15 @@
 .coders {
 
   &__page {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba($color-grey-dark-3, .5);
     padding: 3rem;
     color: $color-grey-light-2;
@@ -12,6 +17,9 @@
 
   &__header-text-box {
     
+    @mixin atSmall {
+      max-width: 50rem;
+    }
   }
   
   &__header-title {
@@ -25,23 +33,45 @@
 
   &__section {
     flex-direction: column;
+    background-color: rgba($color-grey-dark-1, .25);
+
+    @mixin atMedium {
+      max-width: 60rem;
+      margin-top: 2rem;
+      border-radius: $bor-rad-lg;
+
+      &:last-child {
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   &__sub-heading {
-    padding: 1.5rem 2rem;
+    border-top: 1px solid $color-black;
+    margin-bottom: 1rem;
+    padding: 3rem;
     color: $color-grey-light-1;
-    font-size: 2.6rem;
+    line-height: 1.2;
+
+    @mixin atMedium {
+      max-width: 60rem;
+      border-top: none;
+    }
   }
 
   &__list {
-    padding: 0 3rem;
+    padding: 0 3rem 1.5rem;
+
+    @mixin atMedium {
+      max-width: 60rem;
+    }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    margin-bottom: .5rem;
-    padding: 0 1rem 1rem 1rem;
+    margin-bottom: .8rem;
+    padding: 0 2rem 1rem;
     border-radius: $bor-rad-lg;
     background-color: rgba($color-grey-dark-3, .5);
     color: $color-grey-light-1;
@@ -55,6 +85,7 @@
     border-radius: 0 0 3px 3px;
     background-color: rgba($color-grey-light-1, .25);
     color: $color-grey-light-1;
+    font-size: 2rem;
     text-align: center;
 
     &:hover {

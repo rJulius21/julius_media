@@ -47,7 +47,7 @@ img {
   width: 100%;
 }
 
-.row {border-bottom: 1px solid black;
+.row {
   display: flex;
   width: 100%;
 }

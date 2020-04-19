@@ -1,6 +1,7 @@
 
 h1 {
   font-family: $font-heading;
+  font-size: 3.8rem;
   font-weight: $font-heading-weight;
   letter-spacing: $font-heading-space;
 }
@@ -8,14 +9,14 @@ h1 {
 h2 {
   font-family: $font-heading;
   font-weight: $font-heading-weight;
-  font-size: 2.6rem;
+  font-size: 3rem;
   letter-spacing: $font-heading-space;
 }
 
 h3 {
   font-family: $font-heading;
   font-weight: $font-heading-weight;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   letter-spacing: $font-heading-space;
 }
 

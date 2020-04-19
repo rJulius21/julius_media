@@ -18,6 +18,10 @@
     background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
     text-align: center;
     padding: 2rem 4rem;
+
+    @mixin atSmall {
+
+    }
   }
 
   &__one-heading {
@@ -27,6 +31,10 @@
 
   &__one-text {
     color: $color-grey-dark-3;
+
+    @mixin atSmall {
+      max-width: 45rem;
+    }
   }
 
   &__two {
@@ -40,6 +48,10 @@
   &__two-text {
     margin-bottom: 1rem;
     color: $color-grey-light-2;
+
+    @mixin atSmall {
+      max-width: 45rem;
+    }
   }
 
   &__two-btn {
@@ -65,6 +77,7 @@
 
   &__heading {
     margin-bottom: 2rem;
+    padding: 1.6rem 0;
     color: $color-grey-light-1;
     text-align: center;
   }
@@ -86,6 +99,16 @@
 
     &:not(:last-child) {
       margin-bottom: 3rem;
+    }
+
+    @mixin atSmall {
+      height: 24rem;
+      max-width: 40rem;
+    }
+
+    @mixin atMedium {
+      height: 22rem;
+      max-width: 36rem;
     }
 
     &--1 {
@@ -123,11 +146,12 @@
 
 .services {
   flex-direction: column;
+  align-items: center;
   padding: 2rem;
   color: $color-grey-light-1;
 
   &__heading {
-    padding: 1rem;
+    padding: 2rem 0;
   }
 
   &__panels { 
@@ -143,6 +167,10 @@
     padding: 3rem;
     border-radius: $bor-rad-lg;
     background-image: radial-gradient($color-grey-light-3, $color-grey-dark-2);
+
+    @mixin atSmall {
+      max-width: 35rem;
+    }
   }
 
   &__panel-link {
@@ -150,6 +178,7 @@
   }
 
   &__panel-heading {
+    margin-bottom: 1.6rem;
     color: $color-grey-light-2;
 
     &:hover {
@@ -164,6 +193,7 @@
 
 .pitch {
   flex-direction: column;
+  align-items: center;
   padding: 2rem;
 
   &__panel {
@@ -174,6 +204,10 @@
     padding: 3rem;
     background-image: radial-gradient(rgba(254,254,254,0.25), #80dfff);
     border-radius: $bor-rad-lg;
+
+    @mixin atSmall {
+      max-width: 40rem;
+    }
   }
 
   &__img-box {
@@ -205,6 +239,7 @@
 
 .features {
   flex-direction: column;
+  align-items: center;
   padding: 2rem;
 
   &__img-box {
@@ -221,6 +256,8 @@
   }
 
   &__heading {
+    padding: 1.6rem 0;
+    color: $color-grey-light-1;
   }
   
   &__panels {
@@ -236,10 +273,14 @@
     padding: 3rem;
     background-image: radial-gradient(rgba(0,255,255,0.5), #60c);
     border-radius: $bor-rad-lg;
+
+    @mixin atSmall {
+      max-width: 40rem;
+    }
   }
   
   &__panel-heading {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: 1rem;
     border-radius: $bor-rad-sm;
     background-color: rgb(124, 196, 238);

@@ -1,10 +1,20 @@
 .services {
 
   &__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    @mixin atMedium {
+      padding-bottom: 2rem;
+    }
   }
 
   &__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding: 2rem;
     background-color: rgba($color-grey-dark-3, .5);
     color: $color-grey-light-2;
@@ -17,10 +27,20 @@
 
   &__banner-text {
 
+    @mixin atSmall {
+      max-width: 46rem;
+    }
   }
 
   &__section {
+    overflow: hidden;
     flex-direction: column;
+    border-radius: $bor-rad-lg;
+    
+    @mixin atMedium {
+      max-width: 50rem;
+      margin-top: 2rem;
+    }
   }
   
   &__graphic-panel {
@@ -28,6 +48,7 @@
     flex-direction: column;
     padding: 3rem;
     align-items: center;
+    background-color: rgba($color-grey-dark-1, .5);
     color: $color-grey-light-1;
   }
 
@@ -54,6 +75,10 @@
   &__list {
     padding: 4rem;
     list-style: none;
+
+    @mixin atSmall {
+      max-width: 48rem;
+    }
   }
 
   &__list-item {
