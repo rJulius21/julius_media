@@ -26,16 +26,17 @@
   &__graphic-panel {
     display: flex;
     flex-direction: column;
+    padding: 3rem;
     align-items: center;
     color: $color-grey-light-1;
   }
 
   &__sub-heading {
-    padding: 3rem;
+   margin-bottom: 3rem;
   }
 
   &__img-box {
-    padding: 3rem;
+    
   }
 
   &__img {
