@@ -53,9 +53,6 @@ ul {
   font-size: $font-text-size;
 }
 
-li {
-
-}
 
 ::selection {
   color: $color-grey-light-2;
