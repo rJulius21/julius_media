@@ -17,6 +17,33 @@
     padding: 1rem 0;
   }
 
+  &__heading-link { 
+
+    @mixin atLarge {
+      width: 50%;
+    }
+  }
+
+  &__heading {
+    width: max-content;
+    margin: 1rem;
+    text-indent: 3px;
+    color: $color-grey-light-2;
+
+    &:hover {
+      color: $color-grey-light-1;
+    }
+
+    @mixin atLarge {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 0;
+      font-size: 4.2rem;
+      text-align: right;
+      text-indent: 0px;
+    }
+  }
+
   &__nav {
     display: flex;
     justify-content: center;
@@ -70,7 +97,7 @@
     height: 1.8rem;
     width: 1.8rem;
     margin-bottom: 4px;
-    fill: $color-grey-light-2;
+    fill: currentColor;
 
     @mixin atSmall {
       height: 2.4rem;
@@ -100,30 +127,7 @@
     }
     
     @mixin atLarge {
-      font-size: .8rem;
-    }
-  }
-
-  &__heading-link { 
-
-    @mixin atLarge {
-      width: 50%;
-    }
-  }
-
-  &__heading {
-    width: max-content;
-    margin: 1rem;
-    text-indent: 3px;
-    color: $color-grey-light-2;
-
-    @mixin atLarge {
-      width: 100%;
-      margin-left: 0;
-      margin-bottom: 0;
-      font-size: 4.2rem;
-      text-align: right;
-      text-indent: 0px;
+      font-size: 1rem;
     }
   }
 }

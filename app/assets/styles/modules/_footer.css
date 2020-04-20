@@ -20,15 +20,19 @@
     justify-content: center;
     padding: 2px;
 
-    &--1 { 
+    &--1 {
       @mixin atLarge {
+        justify-content: flex-end;
         width: 50%;
+        padding-right: 4rem;
       }
     }
 
-    &--2 { 
+    &--2 {
       @mixin atLarge {
+        justify-content: flex-start;
         width: 50%;
+        padding-left: 4rem;
       } 
     }
 
@@ -61,12 +65,14 @@
         margin-right: 2rem;
       }
     }
+
+    
   }
 
   &__social-icon {
     height: 2.8rem;
     width: 2.8rem;
-    fill: $color-grey-light-2;
+    fill: currentColor;
 
     @mixin atSmall {
       height: 3rem;
@@ -94,6 +100,8 @@
 
   &__copy { 
     color: $color-grey-light-2;
+    font-family: $font-heading;
+    font-style: italic;
     text-indent: 0px;
   }
 }

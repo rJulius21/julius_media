@@ -178,6 +178,8 @@
 
   &__panels { 
     flex-direction: column;
+    justify-content: space-evenly;
+    
     display: flex;
 
     @mixin atLarge {
@@ -189,13 +191,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem; 
+    margin-bottom: 2rem;
     padding: 3rem;
     border-radius: $bor-rad-lg;
     background-image: radial-gradient($color-grey-light-3, $color-grey-dark-2);
 
     @mixin atSmall {
       max-width: 35rem;
+    }
+
+    @mixin atLarge {
+      width: 30%;
     }
   }
 
@@ -286,6 +292,10 @@
     justify-content: center;
     margin-bottom: 2rem;
     height: 15rem;
+
+    @mixin atLarge {
+      height: 12rem;
+    }
   }
 
   &__img {
@@ -327,10 +337,10 @@
   }
   
   &__panel-heading {
-    width: 75%;
+    width: 85%;
     margin-bottom: 2rem;
     padding: 1rem;
-    border-radius: $bor-rad-sm;
+    border-radius: $bor-rad-lg;
     background-color: rgb(124, 196, 238);
     box-shadow: 0 0 3rem 0 rgba(254,254,254,.75);
     color: $color-grey-light-1;

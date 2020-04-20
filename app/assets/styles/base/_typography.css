@@ -33,6 +33,10 @@ a {
   font-family: $font-link;
   font-weight: $font-link-weight;
   letter-spacing: $font-link-space;
+
+  &:hover {
+    color: $color-grey-light-1;
+  }
 }
 
 p {
