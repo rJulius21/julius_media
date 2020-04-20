@@ -9,6 +9,11 @@
     padding: 2rem;
   }
 
+  @mixin atLarge {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   &__section {
     display: flex;
     align-items: center;
@@ -16,15 +21,22 @@
     padding: 2px;
 
     &--1 { 
-  
+      @mixin atLarge {
+        width: 50%;
+      }
     }
 
     &--2 { 
-
+      @mixin atLarge {
+        width: 50%;
+      } 
     }
 
-    &--3 { 
+    &--3 {
 
+      @mixin atLarge {
+        width: 100%;
+      }
     }
   }
 
@@ -80,7 +92,7 @@
     }
   }
 
-  &__copy {
+  &__copy { 
     color: $color-grey-light-2;
     text-indent: 0px;
   }

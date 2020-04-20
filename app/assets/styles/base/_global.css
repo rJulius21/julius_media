@@ -10,10 +10,6 @@ html {
   @mixin atMedium {
     font-size: 62.5%;
   }
-
-  @mixin atLarge {
-    font-size: 75%;
-  }
 }
 
 *,
@@ -45,6 +41,11 @@ img {
 
 .wrapper {
   width: 100%;
+  margin: 0 auto;
+
+  @mixin atLarge {
+    max-width: 120rem;
+  }
 }
 
 .row {

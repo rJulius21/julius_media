@@ -42,9 +42,10 @@
 
   &__input {
     margin-bottom: 2rem;
-    padding: .5rem;
+    padding: 1rem;
     border-radius: $bor-rad-sm;
     border: none;
+    font-size: $font-text-size;
   }
 
   &__right {
@@ -55,18 +56,19 @@
   }
 
   &__question {
-    margin-bottom: 2rem;
   }
 
   &__checkbox-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
+    padding: 2rem;
   }
 
   &__checkbox-group {
     display: flex;
+    align-items: center;
     margin-bottom: 1rem;
+    padding: .2rem 0;
   }
 
   &__checkbox {
@@ -76,6 +78,7 @@
   &__checkbox-label {
     font-family: $font-text;
     font-size: $font-text-size;
+    line-height: 1;
   }
 
   &__message {
@@ -86,10 +89,11 @@
 
   &__submit {
     align-self: center;
-    padding: .5rem 1rem;
+    padding: .6rem 1.8rem;
     border-radius: $bor-rad-sm;
     border: none;
     font-family: $font-text;
+    font-size: $font-text-size;
   }
 }
 

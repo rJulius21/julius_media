@@ -11,6 +11,10 @@
 .cta { background-color: red;
   flex-direction: column;
 
+  @mixin atLarge {
+    flex-direction: row;
+  }
+
   &__one {
     display: flex;
     flex-direction: column;
@@ -19,14 +23,19 @@
     text-align: center;
     padding: 2rem 4rem;
 
-    @mixin atSmall {
-
+    @mixin atLarge {
+      flex: 1;
+      justify-content: center;
     }
   }
 
   &__one-heading {
     margin-bottom: 1rem;
     color: $color-grey-dark-3;
+
+    @mixin atLarge {
+      margin-bottom: 3rem;
+    }
   }
 
   &__one-text {
@@ -43,6 +52,10 @@
     align-items: center;
     padding: 3rem 4rem;
     background-image: radial-gradient($color-grey-light-3, $color-grey-dark-2);
+
+    @mixin atLarge {
+      width: 35rem;
+    }
   }
 
   &__two-text {
@@ -87,6 +100,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    @mixin atLarge {
+      flex-direction: row;
+    }
   }
 
   &__img-box {
@@ -99,6 +116,10 @@
 
     &:not(:last-child) {
       margin-bottom: 3rem;
+
+      @mixin atLarge {
+        margin-bottom: 0px;
+      }
     }
 
     @mixin atSmall {
@@ -150,6 +171,7 @@
   padding: 2rem;
   color: $color-grey-light-1;
 
+
   &__heading {
     padding: 2rem 0;
   }
@@ -157,6 +179,10 @@
   &__panels { 
     flex-direction: column;
     display: flex;
+
+    @mixin atLarge {
+      flex-direction: row;
+    }
   }
   
   &__panel {
@@ -195,6 +221,18 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  background-image: url('../../images/bg/bg-pitch-sm.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  @mixin atLarge {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    
+  }
 
   &__panel {
     display: flex;
@@ -263,6 +301,11 @@
   &__panels {
     display: flex;
     flex-direction: column;
+
+    @mixin atLarge {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
 
   &__panel {
@@ -277,9 +320,14 @@
     @mixin atSmall {
       max-width: 40rem;
     }
+
+    @mixin atLarge {
+      width: 30%;
+    }
   }
   
   &__panel-heading {
+    width: 75%;
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: $bor-rad-sm;
