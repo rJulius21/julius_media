@@ -28,6 +28,7 @@ $font-link-weight: 300;
 $font-link-space: 0px;
 
 $shadow-lg: 0 1rem 3rem rgba($color-grey-dark-3, .9);
+$shadow-text: 0 0 5px rgba($color-grey-dark-3, .9);
 
 
 $indent: 2rem;

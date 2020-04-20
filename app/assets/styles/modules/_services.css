@@ -1,6 +1,6 @@
 .services {
 
-  &__page {
+  &__page { background-color: rgba($color-grey-light-3, .5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,12 +23,22 @@
   &__heading {
     margin-bottom: 1rem;
     text-align: center;
+
+    @mixin atLarge {
+      font-size: 4rem;
+    }
   }
 
   &__banner-text {
 
     @mixin atSmall {
       max-width: 46rem;
+    }
+
+    @mixin atLarge {
+      max-width: 70rem;
+      margin-bottom: 2rem;
+      font-size: 2rem; 
     }
   }
 
@@ -41,23 +51,53 @@
       max-width: 50rem;
       margin-top: 2rem;
     }
+
+    @mixin atLarge {
+      flex-direction: row;
+      max-width: 90%;
+      width: 90%;
+      min-height: 50rem;
+    }
+
+    &--reverse {
+
+      @mixin atLarge {
+        flex-direction: row-reverse;
+      }
+    }
   }
   
-  &__graphic-panel {
+  &__graphic-panel { 
     display: flex;
     flex-direction: column;
     padding: 3rem;
     align-items: center;
     background-color: rgba($color-grey-dark-1, .5);
     color: $color-grey-light-1;
+
+    @mixin atLarge {
+      width: 60%;
+      justify-content: flex-start;
+    }
   }
 
   &__sub-heading {
    margin-bottom: 3rem;
+
+   @mixin atLarge {
+     margin-top: 2rem;
+     font-size: 4rem;
+   }
   }
 
   &__img-box {
-    
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    @mixin atLarge {
+      width: 75%;
+    }
   }
 
   &__img {

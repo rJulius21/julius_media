@@ -103,6 +103,7 @@
 
     @mixin atLarge {
       flex-direction: row;
+      margin-bottom: 4rem;
     }
   }
 
@@ -183,10 +184,16 @@
   align-items: center;
   padding: 2rem;
   color: $color-grey-light-1;
+  background-image: url('assets/images/bg/bg-body.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 
   &__heading {
     padding: 2rem 0;
+    text-shadow: $shadow-text;
   }
 
   &__panels { 
@@ -242,11 +249,11 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-image: url('../../images/bg/bg-pitch-sm.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url('assets/images/bg/bg-pitch.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   @mixin atLarge {
     flex-direction: row;
@@ -300,6 +307,11 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  background-image: url('assets/images/bg/bg-splash2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   &__img-box {
     display: flex;
@@ -321,6 +333,7 @@
   &__heading {
     padding: 1.6rem 0;
     color: $color-grey-light-1;
+    text-shadow: $shadow-text;
   }
   
   &__panels {
