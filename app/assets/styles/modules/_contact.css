@@ -113,12 +113,14 @@
 
   &__checkbox {
     margin-right: 1rem;
+    cursor: pointer;
   }
 
   &__checkbox-label {
     font-family: $font-text;
     font-size: $font-text-size;
     line-height: 1;
+    cursor: pointer;
   }
 
   &__message {
@@ -135,6 +137,7 @@
     border: none;
     font-family: $font-text;
     font-size: $font-text-size;
+    cursor: pointer;
   }
 }
 
@@ -179,6 +182,8 @@
     @mixin atLarge {
      font-size: 2.2rem; 
     }
+
+    
   }
 
   &__answer {
