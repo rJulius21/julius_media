@@ -197,7 +197,7 @@
     -webkit-background-position: center;
     -webkit-background-size: cover;
     -webkit-background-repeat: no-repeat;
-    -webkit-background-attachment: fixed;
+    -webkit-background-attachment: local;
   }
   
   &__heading {
@@ -273,7 +273,7 @@
     -webkit-background-position: center;
     -webkit-background-size: cover;
     -webkit-background-repeat: no-repeat;
-    -webkit-background-attachment: fixed;
+    -webkit-background-attachment: local;
   }
 
   &__panel {
@@ -333,7 +333,7 @@
     -webkit-background-position: center;
     -webkit-background-size: cover;
     -webkit-background-repeat: no-repeat;
-    -webkit-background-attachment: fixed;
+    -webkit-background-attachment: local;
   }
 
   &__img-box {
