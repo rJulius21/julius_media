@@ -15,19 +15,66 @@
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
   @mixin atSmall {
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   @mixin atLarge {
     flex: 1;
-    display: flex;
-    align-items: center;
+    
     justify-content: center;
     min-height: 100vh;
     padding: none;
   }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: $bor-rad-lg;
+    padding: 3rem; 
+    width: 100%;
+    background-color: rgba($color-grey-dark-1, .5);
+    color: $color-grey-light-1;
+
+    @mixin atSmall {
+      max-width:45rem;
+    }
+  }
+
+  &__section-heading {
+    margin-bottom: 2rem;
+  }
+
+  &__section-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  &__section-text {
+    margin-bottom: 2rem;
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+  &__section-link {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+
+
+  /* ////////  FORM STYLES    ///////////////// */
 
   &__form {
     display: flex;
@@ -194,3 +241,9 @@
      }
   }
 }
+
+.fb-page {
+ 
+}
+
+/* data-width="500px" data-height="" */
