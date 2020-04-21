@@ -93,6 +93,7 @@
     padding: 1.6rem 0;
     color: $color-grey-light-1;
     text-align: center;
+    text-shadow: $shadow-text;
   }
 
   &__row {
@@ -184,13 +185,21 @@
   align-items: center;
   padding: 2rem;
   color: $color-grey-light-1;
-  background-image: url('assets/images/bg/bg-body.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 
+  @mixin atLarge {
+    background-image: url('assets/images/bg/bg-body.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
+    -webkit-background-image: url('assets/images/bg/bg-body.jpg');
+    -webkit-background-position: center;
+    -webkit-background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+  }
+  
   &__heading {
     padding: 2rem 0;
     text-shadow: $shadow-text;
@@ -214,7 +223,7 @@
     margin-bottom: 2rem;
     padding: 3rem;
     border-radius: $bor-rad-lg;
-    background-image: radial-gradient($color-grey-light-3, $color-grey-dark-2);
+    background-image: radial-gradient(rgba($color-grey-light-3, .4), $color-grey-dark-2);
 
     @mixin atSmall {
       max-width: 35rem;
@@ -249,17 +258,22 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-image: url('assets/images/bg/bg-pitch.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
+  
   @mixin atLarge {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-evenly;
-    
+    background-image: url('assets/images/bg/bg-pitch.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    -webkit-background-image: url('assets/images/bg/bg-pitch.jpg');
+    -webkit-background-position: center;
+    -webkit-background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
   }
 
   &__panel {
@@ -307,11 +321,20 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-image: url('assets/images/bg/bg-splash2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  
+  @mixin atLarge {
+    background-image: url('assets/images/bg/bg-splash2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    -webkit-background-image: url('assets/images/bg/bg-splash2.jpg');
+    -webkit-background-position: center;
+    -webkit-background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+  }
 
   &__img-box {
     display: flex;
