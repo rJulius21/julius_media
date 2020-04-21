@@ -5,12 +5,28 @@
   @mixin atSmall {
     padding: 2rem;
   }
+
+  @mixin atLarge {
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding: 0rem;
+  }
 }
 
 .contact {
   
   @mixin atSmall {
     padding-bottom: 2rem;
+  }
+
+  @mixin atLarge {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: none;
   }
 
   &__form {
@@ -24,6 +40,14 @@
     @mixin atSmall {
       max-width: 45rem;
     }
+
+    @mixin atLarge {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 60rem;
+      padding: 2rem 0;
+     }
   }
 
   &__heading {
@@ -33,11 +57,17 @@
     text-align: center;
   }
 
-  &__left {
+  &__left { 
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 2rem;
+
+    @mixin atLarge {
+      justify-content: space-evenly;
+      width: 50%;
+      padding: 2rem;
+     }
   }
 
   &__input {
@@ -53,15 +83,25 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: 2rem;
+
+    @mixin atLarge {
+      width: 50%;
+      padding: 2rem;
+     }
   }
 
   &__question {
+
   }
 
   &__checkbox-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
+
+    @mixin atLarge {
+      padding: 2rem 0rem;
+     }
   }
 
   &__checkbox-group {
@@ -89,6 +129,7 @@
 
   &__submit {
     align-self: center;
+    justify-self: center;
     padding: .6rem 1.8rem;
     border-radius: $bor-rad-sm;
     border: none;
@@ -98,6 +139,7 @@
 }
 
 .faq {
+  background-color: $color-grey-dark-1;
 
   @mixin atSmall {
     overflow: hidden;
@@ -106,12 +148,23 @@
     border-radius: $bor-rad-lg;
   }
 
+  @mixin atLarge {
+    width: 35rem;
+    align-self: stretch;  
+    margin-bottom: 0rem;
+    border-radius: 0px;
+  }
+
   &__heading {
     padding: 1.2rem;
     background-color: $color-grey-light-3;
     color: $color-grey-light-1;
     font-size: 3.4rem;
     text-align: center;
+
+    @mixin atLarge {
+     font-size: 3rem; 
+    }
   }
 
   &__section {
@@ -122,10 +175,17 @@
     padding: 1rem 2rem;
     background-color: $color-grey-light-2;
     color: $color-grey-dark-1;
+
+    @mixin atLarge {
+     font-size: 2.2rem; 
+    }
   }
 
   &__answer {
     padding: 2rem;
-    background-color: $color-grey-dark-1;
+
+    @mixin atLarge {
+      font-size: 1.7rem; 
+     }
   }
 }
