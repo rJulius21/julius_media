@@ -67,7 +67,7 @@
   }
 
   &__section-link {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 2rem;
     text-decoration: underline;
   }
@@ -243,7 +243,8 @@
 }
 
 .fb-page {
- 
+  overflow: hidden;
+  border-radius: $bor-rad-lg;
 }
 
 /* data-width="500px" data-height="" */
