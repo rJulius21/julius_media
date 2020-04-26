@@ -2,7 +2,7 @@
   flex-direction: column;
 }
 
-.home-splash {
+.home-splash { 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
     width: 100%;
   }
 
-  &__img {
+  &__img {background-color: rgba(#000, .81);
     width: 100%;
   }
 }
@@ -64,6 +64,22 @@
 
     @mixin atSmall {
       max-width: 45rem;
+    }
+  }
+
+  &__one-btn {
+    background-color: $color-grey-dark-1;
+    margin-top: 2rem;
+    padding: 1rem;
+    box-shadow: 0 0 2rem 0 $color-grey-light-1;
+    color: $color-grey-light-2;
+    font-size: $font-text-size;
+    font-weight: $font-text-weight;
+
+    transition: $transition;
+
+    &:hover {
+      letter-spacing: 2px;
     }
   }
 
