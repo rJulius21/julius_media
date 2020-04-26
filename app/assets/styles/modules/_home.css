@@ -6,10 +6,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  height: 20rem;
+
+  @mixin atSmall {
+    height: 25rem;
+  }
 
   @mixin atMedium {
-    padding: 5rem;
+    height: 30rem;
+  }
+
+  @mixin atLarge {
+    height: 45rem;
   }
 
   &__figure {
