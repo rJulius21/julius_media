@@ -33,6 +33,7 @@ a {
   font-family: $font-link;
   font-weight: $font-link-weight;
   letter-spacing: $font-link-space;
+  transition: all .3s;
 
   &:hover {
     color: $color-grey-light-1;

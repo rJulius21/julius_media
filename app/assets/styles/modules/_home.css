@@ -222,21 +222,18 @@
   align-items: center;
   padding: 2rem;
   color: $color-grey-light-1;
+  background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-  @mixin atLarge {
-    background-image: url('assets/images/bg/bg-body.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  -webkit-background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
+  -webkit-background-position: center;
+  -webkit-background-size: cover;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-attachment: local;
 
-    -webkit-background-image: url('assets/images/bg/bg-body.jpg');
-    -webkit-background-position: center;
-    -webkit-background-size: cover;
-    -webkit-background-repeat: no-repeat;
-    -webkit-background-attachment: local;
-  }
-  
   &__heading {
     padding: 2rem 0;
     text-shadow: $shadow-text;
@@ -298,19 +295,29 @@
   
   @mixin atLarge {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-evenly;
-    background-image: url('assets/images/bg/bg-pitch.jpg');
+    /* background-color: rgba(); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    -webkit-background-image: url('assets/images/bg/bg-pitch.jpg');
+    /* -webkit-background-image: url('assets/images/bg/bg-pitch.jpg'); */
     -webkit-background-position: center;
     -webkit-background-size: cover;
     -webkit-background-repeat: no-repeat;
     -webkit-background-attachment: local;
+  }
+
+  &__heading {
+    width: 100%;
+    padding: 2rem 0;
+    color: $color-grey-light-1;
+    text-shadow: $shadow-text;
+    padding: 2rem 0;
+    text-align: center;
   }
 
   &__panel {
@@ -319,7 +326,7 @@
     align-items: center;
     margin: 1rem;
     padding: 3rem;
-    background-image: radial-gradient(rgba(254,254,254,0.25), #80dfff);
+    background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
     border-radius: $bor-rad-lg;
 
     @mixin atSmall {
@@ -338,13 +345,13 @@
     height: 100%;
   }
 
-  &__heading { 
+  &__sub-heading { 
     margin-top: -2.2rem;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: $bor-rad-sm;
-    background-color: $color-grey-light-1;
-    border: 1px solid #80dfff;
+    background-image: radial-gradient($color-grey-light-1, $color-grey-light-2);
+    border: 1px solid $color-grey-light-1;
     color: $color-grey-dark-1;
   }
 
@@ -358,20 +365,17 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  
-  @mixin atLarge {
-    background-image: url('assets/images/bg/bg-splash2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-    -webkit-background-image: url('assets/images/bg/bg-splash2.jpg');
-    -webkit-background-position: center;
-    -webkit-background-size: cover;
-    -webkit-background-repeat: no-repeat;
-    -webkit-background-attachment: local;
-  }
+  -webkit-background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
+  -webkit-background-position: center;
+  -webkit-background-size: cover;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-attachment: local;
 
   &__img-box {
     display: flex;
@@ -413,6 +417,7 @@
     margin: 1rem;
     padding: 3rem;
     background-image: radial-gradient(rgba(0,255,255,0.5), #60c);
+    background-image: radial-gradient(rgba($color-grey-light-3, .4), $color-grey-dark-2);
     border-radius: $bor-rad-lg;
 
     @mixin atSmall {
@@ -429,7 +434,7 @@
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: $bor-rad-lg;
-    background-color: rgb(124, 196, 238);
+    background-image: radial-gradient(rgba($color-grey-light-3, .4), $color-grey-dark-2);
     box-shadow: 0 0 3rem 0 rgba(254,254,254,.75);
     color: $color-grey-light-1;
     text-align: center;
