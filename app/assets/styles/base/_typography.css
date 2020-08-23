@@ -1,4 +1,3 @@
-
 h1 {
   font-family: $font-heading;
   font-size: 3.8rem;
@@ -11,6 +10,10 @@ h2 {
   font-weight: $font-heading-weight;
   font-size: 3rem;
   letter-spacing: $font-heading-space;
+
+  @mixin atLarge {
+    font-size: 4rem;
+  }
 }
 
 h3 {
@@ -33,7 +36,7 @@ a {
   font-family: $font-link;
   font-weight: $font-link-weight;
   letter-spacing: $font-link-space;
-  transition: all .3s;
+  transition: all 0.3s;
 
   &:hover {
     color: $color-grey-light-1;
@@ -47,6 +50,11 @@ p {
   letter-spacing: $font-text-space;
   line-height: 1.2;
   text-indent: $indent;
+
+  @mixin atLarge {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
 }
 
 ul {
@@ -54,8 +62,6 @@ ul {
   font-size: $font-text-size;
 }
 
-
 ::selection {
   color: $color-grey-light-2;
 }
-

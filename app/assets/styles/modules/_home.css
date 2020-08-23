@@ -2,7 +2,7 @@
   flex-direction: column;
 }
 
-.home-splash { 
+.home-splash {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,8 @@
     width: 100%;
   }
 
-  &__img {background-color: rgba(#000, .81);
+  &__img {
+    background-color: rgba(#000, 0.81);
     width: 100%;
   }
 }
@@ -33,20 +34,24 @@
   flex-direction: column;
 
   @mixin atLarge {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   &__one {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
+    background-image: linear-gradient(to top, $color-grey-light-1, $color-grey-light-3);
     text-align: center;
     padding: 2rem 4rem;
-
+    
     @mixin atLarge {
-      flex: 1;
-      justify-content: center;
+      align-items: flex-start;
+      height: 70rem;
+      padding:0;
+      padding-top: 14rem;
+      padding-left: 6rem;
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
     }
   }
 
@@ -65,11 +70,15 @@
     @mixin atSmall {
       max-width: 45rem;
     }
+
+    @mixin atLarge {
+      max-width: 60rem;
+    }
   }
 
   &__one-btn {
     background-color: $color-grey-dark-1;
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding: 1rem;
     box-shadow: 0 0 2rem 0 $color-grey-light-1;
     color: $color-grey-light-2;
@@ -77,6 +86,11 @@
     font-weight: $font-text-weight;
 
     transition: $transition;
+
+    @mixin atLarge {
+      margin-top: 8rem;
+    margin-left: 6rem;
+    }
 
     &:hover {
       letter-spacing: 2px;
@@ -89,9 +103,17 @@
     align-items: center;
     padding: 3rem 4rem;
     background-image: radial-gradient($color-grey-light-3, $color-grey-dark-2);
-
+    
+    
     @mixin atLarge {
-      width: 35rem;
+      align-items: flex-end;
+      height: 70rem;
+      padding: 0;
+      padding-top: 30rem;
+      padding-right: 6rem;
+      background-image: linear-gradient(to bottom, $color-grey-light-3, $color-grey-dark-2);
+      clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+      transform: translateY(-46%);
     }
   }
 
@@ -102,16 +124,25 @@
     @mixin atSmall {
       max-width: 45rem;
     }
+
+    @mixin atLarge {
+      max-width: 60rem;
+    }
   }
 
   &__two-btn {
     background-color: $color-grey-dark-1;
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding: 1rem;
     box-shadow: 0 0 2rem 0 $color-grey-light-1;
     color: $color-grey-light-2;
     font-size: $font-text-size;
     font-weight: $font-text-weight;
+
+    @mixin atLarge {
+      margin-top: 8rem;
+      margin-right: 10rem;
+    }
 
     transition: $transition;
 
@@ -124,9 +155,10 @@
 .home-comp {
   flex-direction: column;
   padding: 3rem 6rem;
+  transform: translateY(-18rem);
 
   &__heading {
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     padding: 1.6rem 0;
     color: $color-grey-light-1;
     text-align: center;
@@ -173,7 +205,6 @@
     }
 
     &--1 {
-
       @mixin atLarge {
         z-index: 1;
         transform: translate(2rem, 1rem);
@@ -228,28 +259,40 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  -webkit-background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
+  -webkit-background-image: radial-gradient(
+    $color-grey-light-1,
+    $color-grey-light-3
+  );
   -webkit-background-position: center;
   -webkit-background-size: cover;
   -webkit-background-repeat: no-repeat;
   -webkit-background-attachment: local;
 
+  @mixin atLarge {
+    padding: 10rem 0;
+  }
+
   &__heading {
     padding: 2rem 0;
     text-shadow: $shadow-text;
+
+    @mixin atLarge {
+      padding: 0;
+      padding-bottom: 6rem;
+    }
   }
 
-  &__panels { 
+  &__panels {
     flex-direction: column;
     justify-content: space-evenly;
-    
+
     display: flex;
 
     @mixin atLarge {
       flex-direction: row;
     }
   }
-  
+
   &__panel {
     display: flex;
     flex-direction: column;
@@ -257,7 +300,10 @@
     margin-bottom: 2rem;
     padding: 3rem;
     border-radius: $bor-rad-lg;
-    background-image: radial-gradient(rgba($color-grey-light-3, .4), $color-grey-dark-2);
+    background-image: radial-gradient(
+      rgba($color-grey-light-3, 0.4),
+      $color-grey-dark-2
+    );
 
     @mixin atSmall {
       max-width: 35rem;
@@ -292,19 +338,18 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  
+
   @mixin atLarge {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-evenly;
-    /* background-color: rgba(); */
+    padding: 10rem 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    /* -webkit-background-image: url('assets/images/bg/bg-pitch.jpg'); */
     -webkit-background-position: center;
     -webkit-background-size: cover;
     -webkit-background-repeat: no-repeat;
@@ -318,6 +363,11 @@
     text-shadow: $shadow-text;
     padding: 2rem 0;
     text-align: center;
+
+    @mixin atLarge {
+      padding:0;
+      padding-bottom: 8rem;
+    }
   }
 
   &__panel {
@@ -345,7 +395,7 @@
     height: 100%;
   }
 
-  &__sub-heading { 
+  &__sub-heading {
     margin-top: -2.2rem;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -365,17 +415,24 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
+  background-image: radial-gradient($color-grey-light-3, $color-black);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  -webkit-background-image: radial-gradient($color-grey-light-1, $color-grey-light-3);
+  -webkit-background-image: radial-gradient(
+    $color-grey-light-1,
+    $color-grey-light-3
+  );
   -webkit-background-position: center;
   -webkit-background-size: cover;
   -webkit-background-repeat: no-repeat;
   -webkit-background-attachment: local;
+
+  @mixin atLarge {
+    padding: 10rem 0;
+  }
 
   &__img-box {
     display: flex;
@@ -398,8 +455,13 @@
     padding: 1.6rem 0;
     color: $color-grey-light-1;
     text-shadow: $shadow-text;
+
+    @mixin atLarge {
+      padding:0;
+      padding-bottom: 8rem;
+    }
   }
-  
+
   &__panels {
     display: flex;
     flex-direction: column;
@@ -416,8 +478,11 @@
     align-items: center;
     margin: 1rem;
     padding: 3rem;
-    background-image: radial-gradient(rgba(0,255,255,0.5), #60c);
-    background-image: radial-gradient(rgba($color-grey-light-3, .4), $color-grey-dark-2);
+    background-image: radial-gradient(rgba(0, 255, 255, 0.5), #60c);
+    background-image: radial-gradient(
+      rgba($color-grey-light-3, 0.4),
+      $color-grey-dark-2
+    );
     border-radius: $bor-rad-lg;
 
     @mixin atSmall {
@@ -428,14 +493,17 @@
       width: 30%;
     }
   }
-  
+
   &__panel-heading {
     width: 85%;
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: $bor-rad-lg;
-    background-image: radial-gradient(rgba($color-grey-light-3, .4), $color-grey-dark-2);
-    box-shadow: 0 0 3rem 0 rgba(254,254,254,.75);
+    background-image: radial-gradient(
+      rgba($color-grey-light-3, 0.4),
+      $color-grey-dark-2
+    );
+    box-shadow: 0 0 3rem 0 rgba(254, 254, 254, 0.75);
     color: $color-grey-light-1;
     text-align: center;
   }
