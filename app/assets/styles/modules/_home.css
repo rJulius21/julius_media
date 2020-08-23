@@ -155,14 +155,21 @@
 .home-comp {
   flex-direction: column;
   padding: 3rem 6rem;
-  transform: translateY(-18rem);
+
+  @mixin atLarge{
+    transform: translateY(-18rem);
+  }
 
   &__heading {
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
     padding: 1.6rem 0;
     color: $color-grey-light-1;
     text-align: center;
     text-shadow: $shadow-text;
+
+    @mixin atLarge {
+      margin-bottom: 10rem;
+    }
   }
 
   &__row {
