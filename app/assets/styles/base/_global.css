@@ -21,9 +21,8 @@ html {
 }
 
 body {
-  background-image: radial-gradient($color-grey-light-2, $color-grey-dark-1);
+  background-image: url('assets/images/bg/bg.jpg');
   background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
