@@ -9,15 +9,15 @@
   height: 10rem;
 
   @mixin atSmall {
-    height: 12rem;
+    height: 18rem;
   }
 
   @mixin atMedium {
-    height: 16rem;
+    height: 22rem;
   }
 
   @mixin atLarge {
-    height: 24rem;
+    height: 28rem;
   }
 
   &__figure {
