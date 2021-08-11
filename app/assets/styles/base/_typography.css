@@ -1,0 +1,67 @@
+h1 {
+  font-family: $font-heading;
+  font-size: 3.8rem;
+  font-weight: $font-heading-weight;
+  letter-spacing: $font-heading-space;
+}
+
+h2 {
+  font-family: $font-heading;
+  font-weight: $font-heading-weight;
+  font-size: 3rem;
+  letter-spacing: $font-heading-space;
+
+  @mixin atLarge {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-family: $font-heading;
+  font-weight: $font-heading-weight;
+  font-size: 2.6rem;
+  letter-spacing: $font-heading-space;
+}
+
+h4 {
+  font-family: $font-heading;
+  font-weight: $font-heading-weight;
+  letter-spacing: $font-heading-space;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1;
+  color: $color-grey-light-3;
+  font-family: $font-link;
+  font-weight: $font-link-weight;
+  letter-spacing: $font-link-space;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $color-grey-light-1;
+  }
+}
+
+p {
+  font-family: $font-text;
+  font-weight: $font-text-weight;
+  font-size: $font-text-size;
+  letter-spacing: $font-text-space;
+  line-height: 1.2;
+  text-indent: $indent;
+
+  @mixin atLarge {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+ul {
+  font-family: $font-text;
+  font-size: $font-text-size;
+}
+
+::selection {
+  color: $color-grey-light-2;
+}

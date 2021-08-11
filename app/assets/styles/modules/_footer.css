@@ -1,0 +1,107 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+  background-image: linear-gradient(to top, $color-grey-dark-3, $color-grey-dark-1);
+  border-top: 1px solid $color-black;
+
+  @mixin atSmall {
+    padding: 2rem;
+  }
+
+  @mixin atLarge {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+
+    &--1 {
+      @mixin atLarge {
+        justify-content: flex-end;
+        width: 50%;
+        padding-right: 4rem;
+      }
+    }
+
+    &--2 {
+      @mixin atLarge {
+        justify-content: flex-start;
+        width: 50%;
+        padding-left: 4rem;
+      } 
+    }
+
+    &--3 {
+
+      @mixin atLarge {
+        width: 100%;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    margin-bottom: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: 1.8rem;
+
+      @mixin atSmall {
+        margin-right: 2rem;
+      }
+    }
+
+    
+  }
+
+  &__social-icon {
+    height: 2.8rem;
+    width: 2.8rem;
+    fill: currentColor;
+
+    @mixin atSmall {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    margin-bottom: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__nav-link {
+    color: $color-grey-light-2;
+    font-size: 1.4rem;
+    
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__copy { 
+    color: $color-grey-light-2;
+    font-family: $font-heading;
+    font-style: italic;
+    text-indent: 0px;
+  }
+}

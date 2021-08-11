@@ -1,0 +1,250 @@
+.contact-body {
+  flex-direction: column;
+  align-items: center;
+
+  @mixin atSmall {
+    padding: 2rem;
+  }
+
+  @mixin atLarge {
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding: 0rem;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @mixin atSmall {
+    padding: 2rem;
+  }
+
+  @mixin atLarge {
+    flex: 1;
+    
+    justify-content: center;
+    min-height: 100vh;
+    padding: none;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: $bor-rad-lg;
+    padding: 3rem; 
+    width: 100%;
+    background-color: rgba($color-grey-dark-2, .5);
+    color: $color-grey-light-1;
+
+    @mixin atSmall {
+      max-width:45rem;
+    }
+  }
+
+  &__section-heading {
+    margin-bottom: 2rem;
+  }
+
+  &__section-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  &__section-text {
+    margin-bottom: 2rem;
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+  &__section-link {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+
+
+  /* ////////  FORM STYLES    ///////////////// */
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    border-radius: $bor-rad-lg;
+    background-color: $color-grey-dark-3;
+    color: $color-grey-light-1;
+
+    @mixin atSmall {
+      max-width: 45rem;
+    }
+
+    @mixin atLarge {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 60rem;
+      padding: 2rem 0;
+     }
+  }
+
+  &__heading {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__left { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    @mixin atLarge {
+      justify-content: space-evenly;
+      width: 50%;
+      padding: 2rem;
+     }
+  }
+
+  &__input {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: $bor-rad-sm;
+    border: none;
+    font-size: $font-text-size;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    @mixin atLarge {
+      width: 50%;
+      padding: 2rem;
+     }
+  }
+
+  &__question {
+
+  }
+
+  &__checkbox-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+
+    @mixin atLarge {
+      padding: 2rem 0rem;
+     }
+  }
+
+  &__checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: .2rem 0;
+  }
+
+  &__checkbox {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &__checkbox-label {
+    font-family: $font-text;
+    font-size: $font-text-size;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  &__message {
+    padding: 2rem;
+    border-radius: $bor-rad-lg;
+    border: none;
+  }
+
+  &__submit {
+    align-self: center;
+    justify-self: center;
+    padding: .6rem 1.8rem;
+    border-radius: $bor-rad-sm;
+    border: none;
+    font-family: $font-text;
+    font-size: $font-text-size;
+    cursor: pointer;
+  }
+}
+
+.faq {
+  background-color: $color-grey-dark-1;
+
+  @mixin atSmall {
+    overflow: hidden;
+    max-width: 45rem;
+    margin-bottom: 2rem;
+    border-radius: $bor-rad-lg;
+  }
+
+  @mixin atLarge {
+    width: 35rem;
+    align-self: stretch;  
+    margin-bottom: 0rem;
+    border-radius: 0px;
+  }
+
+  &__heading {
+    padding: 1.2rem;
+    background-color: $color-grey-light-3;
+    color: $color-grey-light-1;
+    font-size: 3.4rem;
+    text-align: center;
+
+    @mixin atLarge {
+     font-size: 3rem; 
+    }
+  }
+
+  &__section {
+    color: $color-grey-light-1;
+  }
+
+  &__question {
+    padding: 1rem 2rem;
+    background-color: $color-grey-light-2;
+    color: $color-grey-dark-1;
+
+    @mixin atLarge {
+     font-size: 2.2rem; 
+    }
+
+    
+  }
+
+  &__answer {
+    padding: 2rem;
+
+    @mixin atLarge {
+      font-size: 1.7rem; 
+     }
+  }
+}
+
+.fb-page {
+  overflow: hidden;
+  border-radius: $bor-rad-lg;
+}
+
+/* data-width="500px" data-height="" */
